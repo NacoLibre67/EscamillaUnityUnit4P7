@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
-        player = GetComponent<GameObject>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
